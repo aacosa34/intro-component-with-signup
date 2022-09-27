@@ -1,0 +1,82 @@
+:root {
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
+
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+
+    --accent-blue: hsl(248, 32%, 49%);
+
+    --neutral-dark-blue: hsl(249, 10%, 26%);
+    --neutral-grayish-blue: hsl(246, 25%, 77%);
+
+    --fz-body: 16px;
+
+    --font-family: "Poppins", system-ui;
+}
+
+body {
+    max-width: var(--width-desktop);
+    min-width: var(--width-mobile);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: repeat;
+    background-color: var(--primary-red);
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: var(--fz-body);
+}
+
+.abstract {
+    text-align: left;
+}
+
+.abstract p {
+    padding-right: 30%;
+    font-size: 20px
+}
+
+.title {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 70px;
+}
+
+.try-free {
+    background-color: var(--accent-blue);
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff
+}
+
+.button {
+    border: none;
+    color: #fff;
+    background-color: var(--primary-green);
+    font-size: var(--fz-body);
+    text-transform: uppercase;
+}
+
+small {
+    color: var(--neutral-grayish-blue)
+}
+
+a {
+    color: var(--primary-red);
+    font-weight: 700;
+    text-decoration: none;
+}
